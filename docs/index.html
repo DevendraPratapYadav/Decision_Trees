@@ -825,19 +825,19 @@ style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:107%;font-family:
 <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
 line-height:107%;font-family:"Segoe UI","sans-serif"'>We consider a random
 subset of 1000 data points from the given data to train the Decision <span
-class=SpellE>Tree.Due</span> to small number of ‘1’ class labels (~400) for
-total data (~5800), the accuracy of the tree varies based on how many ‘1’ label
+class=SpellE>Tree.Due</span> to small number of '1' class labels (~400) for
+total data (~5800), the accuracy of the tree varies based on how many Â‘1Â’ label
 data points are selected. Hence, all the data presented for a given experiment
 is average of 10 test runs. <o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
 line-height:107%;font-family:"Segoe UI","sans-serif"'><br>
-We apply early stopping criteria in the form of “Threshold Percentage”. If more
+We apply early stopping criteria in the form of Â“Threshold PercentageÂ”. If more
 than X% of data points being considered at a node have the same class label
-‘a’, then we label that node as a terminal node with class label ‘a’ and don’t
+Â‘aÂ’, then we label that node as a terminal node with class label Â‘aÂ’ and donÂ’t
 split it further.<br>
 We vary the Threshold Percentage from 94% to 100% and plot the results. Below
-94%, we often get a tree with a single node since most data points have ‘0’
+94%, we often get a tree with a single node since most data points have Â‘0Â’
 class label.</span><span style='mso-no-proof:yes'><o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='text-align:center'><span
@@ -1133,8 +1133,8 @@ the tree. <o:p></o:p></span></p>
 <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
 line-height:107%;font-family:"Segoe UI","sans-serif"'><br>
 To add noise, we can swap the labels of a percentage of the data. However, this
-leads to very low noise added to the actual data since lots of labels are ‘0’.
-So, most of the labels are swapped ‘0’ with ‘0’ and no significant change in
+leads to very low noise added to the actual data since lots of labels are Â‘0Â’.
+So, most of the labels are swapped Â‘0Â’ with Â‘0Â’ and no significant change in
 data occurs and negligible change is accuracy is observed.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
@@ -1421,7 +1421,7 @@ subtree. We do this process on all the nodes in the tree. Hence, the final
 pruned tree is less complex, has fewer nodes, and performs better in the
 classification task.<br>
 <br>
-In our code, we perform pruning using ‘Reduced Error Pruning’ method. We
+In our code, we perform pruning using Â‘Reduced Error PruningÂ’ method. We
 perform a DFS on the whole tree to traverse each node. We check if removing
 each node and its subtree is beneficial and prune the tree. We perform pruning
 in Top Down manner so that the largest possible subtree whose removal is
@@ -1602,7 +1602,7 @@ style='font-size:16.0pt;mso-bidi-font-size:11.0pt;line-height:107%;font-family:
 line-height:107%;font-family:"Segoe UI","sans-serif"'>A useful method to reduce
 overfitting is to create multiple trees using a subset of original data and
 combine their result to get the final classification. This process is called
-creating ‘Random Forests’. We select a random subset of features and use it to
+creating Â‘Random ForestsÂ’. We select a random subset of features and use it to
 create a tree. We repeat the process and create large number of trees to obtain
 a random forest. <o:p></o:p></span></p>
 
